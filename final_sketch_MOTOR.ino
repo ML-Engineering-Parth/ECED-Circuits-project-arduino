@@ -46,7 +46,7 @@ void loop(){
     if (light<=5 && light2 <= 2) {
       analogWrite(GREEN_PIN, 0);// Green lights off 
       analogWrite(YELLOW_PIN, 30);// Dimmed yellow light on 
-      delay(1000); //delay for 1 second 
+      delay(2000); //delay for 1 second 
       analogWrite(YELLOW_PIN, 0);// YELLOW light off (0)
       analogWrite(RED_PIN, 30);// Dimmed red light on 
 
@@ -76,7 +76,7 @@ void loop(){
     else if (light >= 5 && light2 <=2) {
       analogWrite(GREEN_PIN, 0);// Green lights off 
       analogWrite(YELLOW_PIN, 255);// Bright yellow on
-      delay(1000);// delay for 1 second (delay(1000)) 
+      delay(2000);// delay for 1 second (delay(1000)) 
       analogWrite(YELLOW_PIN, 0);// Bright yellow off
       analogWrite(RED_PIN, 255);// Bright red on, use analog.Write and set bright red to on
 
